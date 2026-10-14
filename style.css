@@ -1,0 +1,143 @@
+*{
+  margin: 5px;
+  padding: 5px;
+  font-size: medium;
+  font-weight:normal;
+  font-family: 'Times New Roman';
+}
+
+/* Header style*/
+#headerContainer > h1{
+  font-size: 25px;
+  font-weight: bold;
+  color: #89BFF8;
+}
+
+#headerContainer > small{
+  font-size:medium;
+  font-weight: lighter/bolder;
+}
+
+#headerContainer{
+  margin: 30px;
+  padding: 20px;
+  box-shadow: 5px 3px dimgray;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#formContainer{
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 5px 3px dimgray;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  color: #89BFF8;
+}
+
+
+#formContainer > #studentForm > .input-field{
+  display: flex;
+   flex-direction: column;
+   margin-bottom: 18px;
+  
+}
+
+#formContainer > #studentForm > .input-field > label{
+  margin-bottom: 5px;
+   font-size: 14px;
+   color: #333;
+  
+}
+
+#formContainer > #studentForm > .input-field > input{
+  padding: 8px 12px;
+   line-height: 1.2;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   font-size: 15px;
+}
+
+#formContainer > #studentForm:nth-last-child(1) > button{
+  margin-top: 10px;
+}
+
+#formContainer button{
+  padding: 9px 16px;
+   background: #e0f2fe;
+   color: #0369a1;
+   border: none;
+   border-radius: 5px;
+   font-size: 14px;
+   cursor: pointer;
+   width: 50%;
+   margin: 0 auto;
+   display: block;
+   
+}
+
+#listContainer > .list-item {
+  background: #ffffff;
+   padding: 18px;
+   border-radius: 8px;
+   border: 1px solid #e2e8f0;
+}
+
+#listContainer > .list-item > h2{
+  margin: 0 0 6px;
+   font-size: 17px;
+   color: #1e293b;
+   font-weight: 600;
+}
+
+#listContainer > .list-item > p{
+  margin: 0 0 12px;
+   font-size: 14px;
+   color: #64748b;
+   line-height: 1.5;
+}
+
+#listContainer > .list-item >button{
+  padding: 9px 16px;
+   background: #e0f2fe;
+   color: #0369a1;
+   border: none;
+   border-radius: 5px;
+   font-size: 14px;
+   cursor: pointer;
+   width: 50%;
+   margin: 0 auto;
+   display: block;
+   
+}
+
+#listContainer {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   gap: 12px;
+   padding: 10px;
+   width: 100%;
+   max-width: 100%; 
+   box-sizing: border-box;
+   overflow: hidden; 
+ }
+ #listContainer > .list-item {
+   grid-column: span 12;
+   width: 100%;
+   max-width: 100%;
+   box-sizing: border-box;
+   margin: 0;
+ }
+ 
+ @media (width >= 321px) {
+   #listContainer > .list-item {
+     grid-column: span 4;
+   }
+ }
+ @media (width < 320px) {
+   #listContainer > .list-item {
+     grid-column: span 12;
+   }
+ }
